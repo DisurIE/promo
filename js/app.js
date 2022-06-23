@@ -1,18 +1,16 @@
-    if(document.querySelector('aside')){
-        const aside = document.querySelector('aside');
-        const burgers = document.querySelectorAll('.menu-icon');
-        if(window.screen.width > 768){
-        aside.addEventListener('mouseover', e => {
-            aside.classList.add('active');
-        });
-        aside.addEventListener('mouseout', e => {
-            aside.classList.remove('active');
-        });
-        }
-        burgers.forEach(element => {
-            element.addEventListener('click', e => {
-                aside.classList.toggle('active');
-            });
-        });
-        
-    }
+
+    const burger = document.querySelector('.menu-icon');
+    const burgerClose = document.querySelector('.menu-close');
+    burger.addEventListener('mouseover', () => {
+        document.querySelector('.menu').classList.add('active-menu');
+    });
+    burgerClose.addEventListener('click', () => {
+        document.querySelector('.menu').classList.remove('active-menu');
+    });
+
+
+    //////////////////////////////////////////
+
+    $(document).ready(function() {
+        $('#pagepiling').pagepiling();
+    });
