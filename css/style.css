@@ -195,6 +195,9 @@ table {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottom:hover > p {
@@ -383,18 +386,14 @@ table {
 }
 
 .promo__body {
-  max-width: 1090px;
-  margin: auto;
+  max-width: 1120px;
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .promo__body h1 {
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-name: TextAnimate;
-          animation-name: TextAnimate;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  display: block;
   font-weight: 400;
   font-size: 96px;
   line-height: 96px;
@@ -519,6 +518,7 @@ a {
 body {
   font-size: 24px;
   font-family: "Mistral";
+  background-color: black;
 }
 
 .active-menu {
